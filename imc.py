@@ -1,14 +1,4 @@
 def calcular_imc(peso_kg, altura_metros):
-    """
-    Calcula el Índice de Masa Corporal (IMC).
-
-    Args:
-        peso_kg (float): Peso en kilogramos.
-        altura_metros (float): Altura en metros.
-
-    Returns:
-        float: El valor del IMC.
-    """
     if altura_metros <= 0:
         return "Error: La altura debe ser mayor que cero."
     imc = peso_kg / (altura_metros ** 2)
