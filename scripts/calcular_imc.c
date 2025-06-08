@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Función para calcular el IMC
+// Función para calcular el IMC, ALGO PARA VER SI GENERA CONFLICTOS
 float calcularIMC(float peso, float altura) {
 	return peso / (altura * altura);
 }
