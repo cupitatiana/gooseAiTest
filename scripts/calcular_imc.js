@@ -1,6 +1,6 @@
 function calcularIMC(peso, altura) {
     if (altura <= 0) {
-        return "Error: La altura debe ser mayor que cero.";
+        return "Error: La altura debe ser mayor que cero. solo para prevenir división por cero";
     }
     const imc = peso / (altura * altura);
     return Math.round(imc * 100) / 100;
