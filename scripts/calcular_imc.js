@@ -1,5 +1,6 @@
 function calcularIMC(peso, altura) {
     if (altura <= 0) {
+        // mensaje de error si la altura es cero o negativa
         return "Error: La altura debe ser mayor que cero.";
     }
     const imc = peso / (altura * altura);
