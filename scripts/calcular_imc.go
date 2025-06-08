@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Función para calcular el IMC
+// Función para calcular el IMC, el peluca sapee cambio para generar confilcto
 type Persona struct {
 	Altura float64 // en metros
 	Peso   float64 // en kilogramos
