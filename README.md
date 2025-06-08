@@ -1,1 +1,1 @@
-# gooseAiTest
+# Mi ProyectoEste repositorio es gestionado por mi Servidor MCP.
