@@ -1,1 +1,1 @@
-# Mi ProyectoEste repositorio es gestionado por mi Servidor MCP.
+inicio de documentacion
