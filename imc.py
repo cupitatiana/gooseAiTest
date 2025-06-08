@@ -1,4 +1,14 @@
 def calcular_imc(peso_kg, altura_metros):
+    """
+    Calcula el Índice de Masa Corporal (IMC).
+
+    Args:
+        peso_kg (float): Peso en kilogramos.
+        altura_metros (float): Altura en metros.
+
+    Returns:
+        float: El valor del IMC.
+    """
     if altura_metros <= 0:
         return "Error: La altura debe ser mayor que cero."
     imc = peso_kg / (altura_metros ** 2)
@@ -20,3 +30,26 @@ if __name__ == "__main__":
             print("Clasificación: Sobrepeso")
         else:
             print("Clasificación: Obesidad")
+
+def fibonacci(n):
+    """
+    Calcula el n-ésimo número de la serie Fibonacci.
+
+    Args:
+        n (int): El índice del número en la serie (0-indexado).
+
+    Returns:
+        int: El n-ésimo número de Fibonacci.
+    """
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        a, b = 0, 1
+        for _ in range(2, n + 1):
+            a, b = b, a + b
+        return b
+
+# Ejemplo de uso de Fibonacci:
+# print(f"El 10mo número de Fibonacci es: {fibonacci(10)}")
