@@ -1,6 +1,6 @@
 function calcularIMC(peso, altura) {
     if (altura <= 0) {
-        return "Error: La altura debe ser mayor que cero. solo para prevenir división por cero";
+        return "Error: La altura debe ser mayor que cero.";
     }
     const imc = peso / (altura * altura);
     return Math.round(imc * 100) / 100;
@@ -16,6 +16,16 @@ function fibonacci(n) {
     return b;
 }
 
+function sumaDePares(n) {
+    let suma = 0;
+    for (let i = 0; i <= n; i++) {
+        if (i % 2 === 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+
 // Ejemplo de uso:
 const peso = 70; // kg
 const altura = 1.75; // metros
@@ -24,6 +34,9 @@ console.log(`Para un peso de ${peso} kg y una altura de ${altura} m, el IMC es: 
 
 // Ejemplo de uso de Fibonacci:
 console.log(`El 10mo número de Fibonacci es: ${fibonacci(10)}`);
+
+// Ejemplo de uso de suma de pares:
+console.log(`La suma de números pares hasta 10 es: ${sumaDePares(10)}`);
 
 if (typeof imcCalculado === 'number') {
     if (imcCalculado < 18.5) {
